@@ -1,0 +1,222 @@
+{
+  "tickets": [
+    {
+      "id": "TKT-1001",
+      "customer": {
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@example.com",
+        "phone": "+91 98765 43210"
+      },
+      "subject": "Unable to login to my account",
+      "description": "I have been trying to login to my account since this morning. The system keeps showing an invalid credentials error even though my password is correct.",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2026-09-15T10:32:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Rahul Sharma",
+          "message": "Hi, I am unable to login to my account. It keeps showing an error.",
+          "timestamp": "2026-09-15T10:32:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "Hi Rahul, thanks for contacting us. We are checking the issue.",
+          "timestamp": "2026-09-15T10:40:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1002",
+      "customer": {
+        "name": "Priya Verma",
+        "email": "priya.verma@example.com",
+        "phone": "+91 98765 12345"
+      },
+      "subject": "Payment failed during checkout",
+      "description": "My payment failed twice while placing an order. The amount was deducted from my bank account but the order was not confirmed.",
+      "priority": "High",
+      "status": "In Progress",
+      "createdAt": "2026-09-14T14:20:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Priya Verma",
+          "message": "My payment failed but money was deducted from my account.",
+          "timestamp": "2026-09-14T14:20:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "We have forwarded your payment details to our billing team.",
+          "timestamp": "2026-09-14T14:35:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1003",
+      "customer": {
+        "name": "Amit Kumar",
+        "email": "amit.kumar@example.com",
+        "phone": "+91 98111 22334"
+      },
+      "subject": "Request to update account email",
+      "description": "I recently changed my email address and would like to update the email associated with my account.",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdAt": "2026-09-13T09:15:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Amit Kumar",
+          "message": "I want to change my account email address.",
+          "timestamp": "2026-09-13T09:15:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "Your email address has been successfully updated.",
+          "timestamp": "2026-09-13T09:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1004",
+      "customer": {
+        "name": "Sneha Gupta",
+        "email": "sneha.gupta@example.com",
+        "phone": "+91 98989 77665"
+      },
+      "subject": "Order delivery is delayed",
+      "description": "My order was expected yesterday but it has still not arrived. Please provide an update on the delivery status.",
+      "priority": "Medium",
+      "status": "Resolved",
+      "createdAt": "2026-09-12T16:45:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Sneha Gupta",
+          "message": "My order has not arrived yet. Can you please check?",
+          "timestamp": "2026-09-12T16:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1005",
+      "customer": {
+        "name": "Vikas Singh",
+        "email": "vikas.singh@example.com",
+        "phone": "+91 97654 33221"
+      },
+      "subject": "Unable to download invoice",
+      "description": "The invoice download button does not seem to work from my orders section.",
+      "priority": "Low",
+      "status": "Resolved",
+      "createdAt": "2026-09-11T11:10:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Vikas Singh",
+          "message": "I cannot download my invoice.",
+          "timestamp": "2026-09-11T11:10:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "The invoice issue has been fixed. Please try downloading it again.",
+          "timestamp": "2026-09-11T11:25:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1006",
+      "customer": {
+        "name": "Neha Kapoor",
+        "email": "neha.kapoor@example.com",
+        "phone": "+91 91234 56789"
+      },
+      "subject": "App is running slowly",
+      "description": "The application takes a long time to load after signing in. Other pages are also taking longer than usual.",
+      "priority": "Low",
+      "status": "In Progress",
+      "createdAt": "2026-09-10T13:25:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Neha Kapoor",
+          "message": "The app has become very slow recently.",
+          "timestamp": "2026-09-10T13:25:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "Our technical team is investigating the performance issue.",
+          "timestamp": "2026-09-10T13:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1007",
+      "customer": {
+        "name": "Arjun Mehta",
+        "email": "arjun.mehta@example.com",
+        "phone": "+91 99887 66554"
+      },
+      "subject": "Password reset email not received",
+      "description": "I requested a password reset several times but haven't received the reset email yet.",
+      "priority": "High",
+      "status": "Open",
+      "createdAt": "2026-09-09T17:05:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Arjun Mehta",
+          "message": "I requested a password reset but the email never arrived.",
+          "timestamp": "2026-09-09T17:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "TKT-1008",
+      "customer": {
+        "name": "Kavita Joshi",
+        "email": "kavita.joshi@example.com",
+        "phone": "+91 98712 34567"
+      },
+      "subject": "Refund status inquiry",
+      "description": "I requested a refund three days ago and would like to know when the amount will be credited.",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdAt": "2026-09-08T12:30:00Z",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "customer",
+          "name": "Kavita Joshi",
+          "message": "Can you please tell me the status of my refund?",
+          "timestamp": "2026-09-08T12:30:00Z"
+        },
+        {
+          "id": 2,
+          "sender": "support",
+          "name": "Support Team",
+          "message": "Your refund has been processed successfully.",
+          "timestamp": "2026-09-08T13:00:00Z"
+        }
+      ]
+    }
+  ]
+}
