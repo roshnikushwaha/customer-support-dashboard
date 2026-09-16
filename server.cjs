@@ -1,16 +1,10 @@
 const path = require("path");
-const fs = require("fs");
 const jsonServer = require("json-server");
 
 const server = jsonServer.create();
 
 const dbPath = path.join(__dirname, "db.json");
-
-console.log("DB PATH:", dbPath);
-console.log("DB EXISTS:", fs.existsSync(dbPath));
-
-const dbContent = fs.readFileSync(dbPath, "utf8");
-console.log("DB HAS TICKETS:", dbContent.includes('"tickets"'));
+const publicPath = path.join(__dirname, "dist");
 
 const router = jsonServer.router(dbPath);
 const middlewares = jsonServer.defaults();
@@ -38,8 +32,18 @@ server.use((req, res, next) => {
   next();
 });
 
-server.use(router);
+/* API */
+server.use("/api", router);
+
+/* React frontend */
+server.use(jsonServer.defaults({ static: publicPath }));
+server.use(require("express").static(publicPath));
+
+/* React routing fallback */
+server.get("*", (req, res) => {
+  res.sendFile(path.join(publicPath, "index.html"));
+});
 
 server.listen(PORT, "0.0.0.0", () => {
-  console.log(`JSON Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
