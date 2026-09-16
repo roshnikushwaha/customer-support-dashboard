@@ -29,6 +29,6 @@ server.use((req, res, next) => {
 
 server.use(router);
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`JSON Server running on port ${PORT}`);
 });
