@@ -1,9 +1,16 @@
 const path = require("path");
+const fs = require("fs");
 const jsonServer = require("json-server");
 
 const server = jsonServer.create();
 
 const dbPath = path.join(__dirname, "db.json");
+
+console.log("DB PATH:", dbPath);
+console.log("DB EXISTS:", fs.existsSync(dbPath));
+
+const dbContent = fs.readFileSync(dbPath, "utf8");
+console.log("DB HAS TICKETS:", dbContent.includes('"tickets"'));
 
 const router = jsonServer.router(dbPath);
 const middlewares = jsonServer.defaults();
